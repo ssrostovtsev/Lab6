@@ -1,0 +1,11 @@
+C:\Workspaces\MobilePhone21\MobileFormWinForm\bin\Debug\MobileFormWinForm.exe.config
+C:\Workspaces\MobilePhone21\MobileFormWinForm\bin\Debug\MobileFormWinForm.exe
+C:\Workspaces\MobilePhone21\MobileFormWinForm\bin\Debug\MobileFormWinForm.pdb
+C:\Workspaces\MobilePhone21\MobileFormWinForm\obj\Debug\MobileFormWinForm.csprojResolveAssemblyReference.cache
+C:\Workspaces\MobilePhone21\MobileFormWinForm\obj\Debug\MobileFormWinForm.Properties.Resources.resources
+C:\Workspaces\MobilePhone21\MobileFormWinForm\obj\Debug\MobileFormWinForm.csproj.GenerateResource.Cache
+C:\Workspaces\MobilePhone21\MobileFormWinForm\obj\Debug\MobileFormWinForm.exe
+C:\Workspaces\MobilePhone21\MobileFormWinForm\obj\Debug\MobileFormWinForm.pdb
+C:\Workspaces\MobilePhone21\MobileFormWinForm\obj\Debug\MobileFormWinForm.MobilePhoneForm.resources
+C:\Workspaces\MobilePhone21\MobileFormWinForm\bin\Debug\MobilePhoneClassLib.dll
+C:\Workspaces\MobilePhone21\MobileFormWinForm\bin\Debug\MobilePhoneClassLib.pdb

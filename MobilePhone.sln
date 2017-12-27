@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimCorp.IMS.MobilePhone.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimCorp.IMS.MobilePhoneSMS", "MobilePhoneSMS\SimCorp.IMS.MobilePhoneSMS.csproj", "{E2068243-9366-4095-AA6B-7291E43935E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimCorp.IMS.MobilePhoneWithStorage", "SimCorp.IMS.MobilePhoneWithStorage\SimCorp.IMS.MobilePhoneWithStorage.csproj", "{9591AF6D-B33D-42C0-8ABB-B8765777C4A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E2068243-9366-4095-AA6B-7291E43935E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2068243-9366-4095-AA6B-7291E43935E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2068243-9366-4095-AA6B-7291E43935E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9591AF6D-B33D-42C0-8ABB-B8765777C4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9591AF6D-B33D-42C0-8ABB-B8765777C4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9591AF6D-B33D-42C0-8ABB-B8765777C4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9591AF6D-B33D-42C0-8ABB-B8765777C4A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
