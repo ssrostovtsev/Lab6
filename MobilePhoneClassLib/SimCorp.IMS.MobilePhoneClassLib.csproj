@@ -50,6 +50,9 @@
     <Compile Include="IScreenImage.cs" />
     <Compile Include="LiIonBattery.cs" />
     <Compile Include="LiPoBattery.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageFilter.cs" />
+    <Compile Include="MessageStorage.cs" />
     <Compile Include="Mobile.cs" />
     <Compile Include="MonochromeScreen.cs" />
     <Compile Include="MultiCoreCPU.cs" />

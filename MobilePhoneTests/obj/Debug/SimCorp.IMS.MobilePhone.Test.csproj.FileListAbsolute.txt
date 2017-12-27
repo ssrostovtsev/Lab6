@@ -1,0 +1,11 @@
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobilePhoneTests.dll
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobilePhoneTests.pdb
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobileFormWinForm.exe
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobilePhoneClassLib.dll
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobilePhoneSMS.exe
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobileFormWinForm.pdb
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobilePhoneClassLib.pdb
+C:\Workspaces\MobilePhone4\MobilePhoneTests\bin\Debug\MobilePhoneSMS.pdb
+C:\Workspaces\MobilePhone4\MobilePhoneTests\obj\Debug\SimCorp.IMS.MobilePhone.Test.csprojResolveAssemblyReference.cache
+C:\Workspaces\MobilePhone4\MobilePhoneTests\obj\Debug\MobilePhoneTests.dll
+C:\Workspaces\MobilePhone4\MobilePhoneTests\obj\Debug\MobilePhoneTests.pdb
