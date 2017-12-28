@@ -73,7 +73,9 @@ namespace SimCorp.IMS.MobilePhoneWithStorage {
         }
 
         private void AddMessageTimer_Tick(object sender, System.EventArgs e) {
-            MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Dummy message for you!"));
+            // MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Dummy message for you!"));
+            SMSGenerator sMSGenerator = new SMSGenerator();
+            sMSGenerator.GenerateMessage(MsgStorage);
         }
 
         private void DeleteMessageTimer_Tick(object sender, System.EventArgs e) {
