@@ -55,7 +55,9 @@
     <Compile Include="ChargerTest.cs" />
     <Compile Include="FakeOutput.cs" />
     <Compile Include="FakeShowSMS.cs" />
+    <Compile Include="MessageFilterAndAllFiltersTest.cs" />
     <Compile Include="MessageFilterNumberStartsWithTest.cs" />
+    <Compile Include="MessageFilterOrAllFiltersTest.cs" />
     <Compile Include="MessageFilterTextContainsTest.cs" />
     <Compile Include="MessageFilterUniqueNumberTest.cs" />
     <Compile Include="OutputTest.cs" />

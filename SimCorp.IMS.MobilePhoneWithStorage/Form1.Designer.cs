@@ -23,18 +23,21 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            this.components = new System.ComponentModel.Container();
             this.MessageListBox = new System.Windows.Forms.ListBox();
             this.SMSNumberComboBox = new System.Windows.Forms.ComboBox();
             this.SMSTextTextBox = new System.Windows.Forms.TextBox();
             this.FromDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ToDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ApplyFilterButton = new System.Windows.Forms.Button();
-            this.FormatComboBox = new System.Windows.Forms.ComboBox();
             this.OrCheckBox = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.AddMessageButton = new System.Windows.Forms.Button();
+            this.AddMessageTimer = new System.Windows.Forms.Timer(this.components);
+            this.DeleteMessageTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // MessageListBox
@@ -85,14 +88,6 @@
             this.ApplyFilterButton.UseVisualStyleBackColor = true;
             this.ApplyFilterButton.Click += new System.EventHandler(this.ApplyFilterButton_Click);
             // 
-            // FormatComboBox
-            // 
-            this.FormatComboBox.FormattingEnabled = true;
-            this.FormatComboBox.Location = new System.Drawing.Point(12, 12);
-            this.FormatComboBox.Name = "FormatComboBox";
-            this.FormatComboBox.Size = new System.Drawing.Size(169, 21);
-            this.FormatComboBox.TabIndex = 6;
-            // 
             // OrCheckBox
             // 
             this.OrCheckBox.AutoSize = true;
@@ -139,17 +134,39 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "To";
             // 
+            // AddMessageButton
+            // 
+            this.AddMessageButton.Location = new System.Drawing.Point(12, 10);
+            this.AddMessageButton.Name = "AddMessageButton";
+            this.AddMessageButton.Size = new System.Drawing.Size(75, 23);
+            this.AddMessageButton.TabIndex = 12;
+            this.AddMessageButton.Text = "Add msg";
+            this.AddMessageButton.UseVisualStyleBackColor = true;
+            this.AddMessageButton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // AddMessageTimer
+            // 
+            this.AddMessageTimer.Enabled = true;
+            this.AddMessageTimer.Interval = 5000;
+            this.AddMessageTimer.Tick += new System.EventHandler(this.AddMessageTimer_Tick);
+            // 
+            // DeleteMessageTimer
+            // 
+            this.DeleteMessageTimer.Enabled = true;
+            this.DeleteMessageTimer.Interval = 10000;
+            this.DeleteMessageTimer.Tick += new System.EventHandler(this.DeleteMessageTimer_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 301);
+            this.Controls.Add(this.AddMessageButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.OrCheckBox);
-            this.Controls.Add(this.FormatComboBox);
             this.Controls.Add(this.ApplyFilterButton);
             this.Controls.Add(this.ToDateTimePicker);
             this.Controls.Add(this.FromDateTimePicker);
@@ -171,12 +188,14 @@
         private System.Windows.Forms.DateTimePicker FromDateTimePicker;
         private System.Windows.Forms.DateTimePicker ToDateTimePicker;
         private System.Windows.Forms.Button ApplyFilterButton;
-        private System.Windows.Forms.ComboBox FormatComboBox;
         private System.Windows.Forms.CheckBox OrCheckBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button AddMessageButton;
+        private System.Windows.Forms.Timer AddMessageTimer;
+        private System.Windows.Forms.Timer DeleteMessageTimer;
     }
 }
 

@@ -51,6 +51,7 @@
     <Compile Include="LiIonBattery.cs" />
     <Compile Include="LiPoBattery.cs" />
     <Compile Include="Message.cs" />
+    <Compile Include="MessageEventArgs.cs" />
     <Compile Include="MessageFilter.cs" />
     <Compile Include="MessageStorage.cs" />
     <Compile Include="Mobile.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="ScreenContent.cs" />
     <Compile Include="SimCorpMobile.cs" />
     <Compile Include="SMSProvider.cs" />
+    <Compile Include="SMSProviderInt.cs" />
     <Compile Include="WireCharger.cs" />
     <Compile Include="WirelessCharger.cs" />
   </ItemGroup>

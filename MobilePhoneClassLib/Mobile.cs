@@ -9,6 +9,8 @@ namespace MobilePhone {
         public abstract BatteryBase Battery { get; set; }
         public abstract CPUBase CPU { get; set; }
         public SMSProvider SMSProvider { get; set; }
+        internal SMSProviderInt SMSProviderInt { get; set}
+        public MessageStorage MessageStorage { get; set; }
         private void Show(IScreenImage screenImage) {
             Screen.Show(screenImage);
         }
