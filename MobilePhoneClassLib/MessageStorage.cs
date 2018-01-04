@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MobilePhoneClassLib {
+namespace SimCorp.IMS.MobilePhoneClassLib {
     public class MessageStorage {
         public delegate void MessageHandler(object sender, MessageEventArgs e);
         public event MessageHandler MessageAdded;

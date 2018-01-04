@@ -1,4 +1,6 @@
 ﻿using System;
+using SimCorp.IMS.MobilePhone;
+
 namespace MobilePhone {
     public class ConsoleOutput : IOutput {
         public void Write(string text) {

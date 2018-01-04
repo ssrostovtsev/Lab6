@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MobilePhoneClassLib;
+using SimCorp.IMS.MobilePhoneClassLib;
 
 namespace MobilePhoneTests {
     [TestClass]

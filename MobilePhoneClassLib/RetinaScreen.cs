@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MobilePhone {
+namespace SimCorp.IMS.MobilePhone {
     public class RetinaScreen : ColorfulScreen {
         public RetinaScreen(int width, int height) : base(width, height) { }
         public override void Show(IScreenImage screenImage) {

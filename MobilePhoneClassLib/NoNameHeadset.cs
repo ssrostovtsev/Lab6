@@ -1,5 +1,4 @@
-﻿using System;
-namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public class NoNameHeadset : IPlayback {
         private IOutput Output;
         public NoNameHeadset(IOutput output) {

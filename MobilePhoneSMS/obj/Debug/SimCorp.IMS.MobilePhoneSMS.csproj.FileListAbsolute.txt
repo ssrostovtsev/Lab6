@@ -20,6 +20,6 @@ C:\Workspaces\MobilePhone4\MobilePhoneSMS\bin\Debug\MobilePhoneSMS.pdb
 C:\Workspaces\MobilePhone4\MobilePhoneSMS\bin\Debug\MobilePhoneClassLib.dll
 C:\Workspaces\MobilePhone4\MobilePhoneSMS\bin\Debug\MobilePhoneClassLib.pdb
 C:\Workspaces\MobilePhone4\MobilePhoneSMS\obj\Debug\SimCorp.IMS.MobilePhoneSMS.csprojResolveAssemblyReference.cache
-C:\Workspaces\MobilePhone4\MobilePhoneSMS\obj\Debug\MobilePhoneSMS.Form1.resources
 C:\Workspaces\MobilePhone4\MobilePhoneSMS\obj\Debug\MobilePhoneSMS.Properties.Resources.resources
 C:\Workspaces\MobilePhone4\MobilePhoneSMS\obj\Debug\SimCorp.IMS.MobilePhoneSMS.csproj.GenerateResource.Cache
+C:\Workspaces\MobilePhone4\MobilePhoneSMS\obj\Debug\MobilePhoneSMS.MobilePhoneSMSForm.resources

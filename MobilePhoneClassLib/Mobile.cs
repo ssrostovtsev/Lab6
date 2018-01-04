@@ -1,15 +1,16 @@
 ﻿using System.Text;
-using MobilePhoneClassLib;
+using SimCorp.IMS.MobilePhone;
 
-namespace MobilePhone {
+namespace SimCorp.IMS.MobilePhoneClassLib {
     public abstract class Mobile {
         public Mobile() { }
-        public Mobile(ScreenBase screen, BatteryBase battery, CPUBase cpu) { }
+        public Mobile(ScreenBase screen, BatteryBase battery, CPUBase cpu, MessageStorage messageStorage) {
+        }
         public abstract ScreenBase Screen { get; set; }
         public abstract BatteryBase Battery { get; set; }
         public abstract CPUBase CPU { get; set; }
         public SMSProvider SMSProvider { get; set; }
-        internal SMSProviderInt SMSProviderInt { get; set; }
+        internal abstract SMSProviderInt SMSProviderInt { get; set; }
         public MessageStorage MessageStorage { get; set; }
         private void Show(IScreenImage screenImage) {
             Screen.Show(screenImage);

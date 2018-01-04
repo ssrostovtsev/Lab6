@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobilePhoneClassLib {
+﻿namespace SimCorp.IMS.MobilePhoneClassLib {
     public class MessageEventArgs {
         public Message Message { get; }
         public MessageEventArgs(Message message) {

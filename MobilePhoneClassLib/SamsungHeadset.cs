@@ -1,5 +1,5 @@
-﻿using MobilePhone;
-namespace MobilePhoneClassLib {
+﻿using SimCorp.IMS.MobilePhone;
+namespace SimCorp.IMS.MobilePhoneClassLib {
     public class SamsungHeadset : IPlayback {
         private IOutput Output;
         public SamsungHeadset(IOutput output) {

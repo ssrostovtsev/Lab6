@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MobilePhone {
+namespace SimCorp.IMS.MobilePhone {
     public class WireCharger : ICharger {
         private IOutput Output;
         public WireCharger(IOutput output) {

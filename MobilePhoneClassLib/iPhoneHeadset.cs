@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public class iPhoneHeadset : IPlayback {
         private IOutput Output;
         public iPhoneHeadset(IOutput output) {

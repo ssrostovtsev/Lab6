@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public class OneCoreCPU : CPUBase {
         public OneCoreCPU(string name, double frequency, int cores) : base(name, frequency, cores) {
             this.Cores = 1;

@@ -1,5 +1,5 @@
 ﻿namespace SimCorp.IMS.MobilePhoneWithStorage {
-    partial class Form1 {
+    partial class MobileWithStorageForm {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -31,11 +31,10 @@
             this.ToDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ApplyFilterButton = new System.Windows.Forms.Button();
             this.OrCheckBox = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.AddMessageButton = new System.Windows.Forms.Button();
+            this.SMSNumberLabel = new System.Windows.Forms.Label();
+            this.SMSTextLabel = new System.Windows.Forms.Label();
+            this.FromDateLabel = new System.Windows.Forms.Label();
+            this.ToDateLabel = new System.Windows.Forms.Label();
             this.AddMessageTimer = new System.Windows.Forms.Timer(this.components);
             this.DeleteMessageTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -98,74 +97,61 @@
             this.OrCheckBox.Text = "Use OR instead of AND in filter conditions";
             this.OrCheckBox.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // SMSNumberLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(221, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 13);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Sender number starts with";
+            this.SMSNumberLabel.AutoSize = true;
+            this.SMSNumberLabel.Location = new System.Drawing.Point(221, 12);
+            this.SMSNumberLabel.Name = "SMSNumberLabel";
+            this.SMSNumberLabel.Size = new System.Drawing.Size(129, 13);
+            this.SMSNumberLabel.TabIndex = 8;
+            this.SMSNumberLabel.Text = "Sender number starts with";
             // 
-            // label2
+            // SMSTextLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(221, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 13);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Message text contains";
+            this.SMSTextLabel.AutoSize = true;
+            this.SMSTextLabel.Location = new System.Drawing.Point(221, 53);
+            this.SMSTextLabel.Name = "SMSTextLabel";
+            this.SMSTextLabel.Size = new System.Drawing.Size(113, 13);
+            this.SMSTextLabel.TabIndex = 9;
+            this.SMSTextLabel.Text = "Message text contains";
             // 
-            // label3
+            // FromDateLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(221, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "From";
+            this.FromDateLabel.AutoSize = true;
+            this.FromDateLabel.Location = new System.Drawing.Point(221, 90);
+            this.FromDateLabel.Name = "FromDateLabel";
+            this.FromDateLabel.Size = new System.Drawing.Size(30, 13);
+            this.FromDateLabel.TabIndex = 10;
+            this.FromDateLabel.Text = "From";
             // 
-            // label4
+            // ToDateLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(384, 90);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "To";
-            // 
-            // AddMessageButton
-            // 
-            this.AddMessageButton.Location = new System.Drawing.Point(12, 10);
-            this.AddMessageButton.Name = "AddMessageButton";
-            this.AddMessageButton.Size = new System.Drawing.Size(75, 23);
-            this.AddMessageButton.TabIndex = 12;
-            this.AddMessageButton.Text = "Add msg";
-            this.AddMessageButton.UseVisualStyleBackColor = true;
-            this.AddMessageButton.Click += new System.EventHandler(this.button1_Click);
+            this.ToDateLabel.AutoSize = true;
+            this.ToDateLabel.Location = new System.Drawing.Point(384, 90);
+            this.ToDateLabel.Name = "ToDateLabel";
+            this.ToDateLabel.Size = new System.Drawing.Size(20, 13);
+            this.ToDateLabel.TabIndex = 11;
+            this.ToDateLabel.Text = "To";
             // 
             // AddMessageTimer
             // 
-            this.AddMessageTimer.Enabled = true;
             this.AddMessageTimer.Interval = 5000;
-            this.AddMessageTimer.Tick += new System.EventHandler(this.AddMessageTimer_Tick);
+            //this.AddMessageTimer.Tick += new System.EventHandler(this.AddMessageTimer_Tick);
             // 
             // DeleteMessageTimer
             // 
-            this.DeleteMessageTimer.Enabled = true;
             this.DeleteMessageTimer.Interval = 10000;
-            this.DeleteMessageTimer.Tick += new System.EventHandler(this.DeleteMessageTimer_Tick);
+            //this.DeleteMessageTimer.Tick += new System.EventHandler(this.DeleteMessageTimer_Tick);
             // 
-            // Form1
+            // MobileWithStorageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(543, 301);
-            this.Controls.Add(this.AddMessageButton);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ToDateLabel);
+            this.Controls.Add(this.FromDateLabel);
+            this.Controls.Add(this.SMSTextLabel);
+            this.Controls.Add(this.SMSNumberLabel);
             this.Controls.Add(this.OrCheckBox);
             this.Controls.Add(this.ApplyFilterButton);
             this.Controls.Add(this.ToDateTimePicker);
@@ -173,7 +159,7 @@
             this.Controls.Add(this.SMSTextTextBox);
             this.Controls.Add(this.SMSNumberComboBox);
             this.Controls.Add(this.MessageListBox);
-            this.Name = "Form1";
+            this.Name = "MobileWithStorageForm";
             this.Text = "Mobile Phone with storage";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -189,11 +175,10 @@
         private System.Windows.Forms.DateTimePicker ToDateTimePicker;
         private System.Windows.Forms.Button ApplyFilterButton;
         private System.Windows.Forms.CheckBox OrCheckBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button AddMessageButton;
+        private System.Windows.Forms.Label SMSNumberLabel;
+        private System.Windows.Forms.Label SMSTextLabel;
+        private System.Windows.Forms.Label FromDateLabel;
+        private System.Windows.Forms.Label ToDateLabel;
         private System.Windows.Forms.Timer AddMessageTimer;
         private System.Windows.Forms.Timer DeleteMessageTimer;
     }

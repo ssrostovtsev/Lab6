@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
-using MobilePhoneClassLib;
-using static MobilePhoneClassLib.SMSProvider;
+using SimCorp.IMS.MobilePhoneClassLib;
+using static SimCorp.IMS.MobilePhoneClassLib.SMSProvider;
 
 namespace MobilePhoneSMS {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class MobilePhoneSMSForm : Form {
+        public MobilePhoneSMSForm() {
             InitializeComponent();
             SMSProv = new SMSProvider();
             SMSProv.SMSRecieved += new SMSRecievedHandler(ShowSMS);
@@ -17,7 +17,7 @@ namespace MobilePhoneSMS {
         private SMSProvider SMSProv;
         private string Fmt = "None";
 
-        private void timer1_Tick_1(object sender, EventArgs e) {
+        private void AddSMSTimer_Tick_1(object sender, EventArgs e) {
             string msg = "Message #" + Convert.ToString(i++);
             SMSProv.SendSMS(msg, Fmt);
         }
@@ -29,7 +29,6 @@ namespace MobilePhoneSMS {
         private void FmtComboBox_SelectedValueChanged(object sender, EventArgs e) {
             Fmt = FmtComboBox.Text;
         }
-
 
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public abstract class CPUBase {
         public CPUBase(string name, double frequency, int cores) {
             this.Name = name;

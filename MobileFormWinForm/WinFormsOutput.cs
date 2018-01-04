@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using MobilePhone;
+using SimCorp.IMS.MobilePhone;
 
 namespace MobileFormWinForm {
     public class WinFormsOutput : IOutput {

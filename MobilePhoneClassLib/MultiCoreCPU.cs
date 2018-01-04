@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public class MultiCoreCPU : CPUBase {
         public MultiCoreCPU(string name, double frequency, int cores) : base(name, frequency, cores) {
             this.Cores = cores;

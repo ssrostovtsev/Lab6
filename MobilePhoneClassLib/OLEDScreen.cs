@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MobilePhone {
+namespace SimCorp.IMS.MobilePhone {
     public class OLEDScreen : ColorfulScreen {
         public OLEDScreen(int width, int height) : base(width, height) { }
         public override void Show(IScreenImage screenImage) {

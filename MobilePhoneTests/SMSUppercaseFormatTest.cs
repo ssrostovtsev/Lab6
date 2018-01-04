@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MobilePhoneClassLib;
-using static MobilePhoneClassLib.SMSProvider;
+using SimCorp.IMS.MobilePhoneClassLib;
+using static SimCorp.IMS.MobilePhoneClassLib.SMSProvider;
 
 namespace MobilePhoneTests {
     [TestClass]

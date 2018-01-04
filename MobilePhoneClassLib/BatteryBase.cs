@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public abstract class BatteryBase {
         public BatteryBase() { }
         public BatteryBase(int capacity, double voltage, int chargeLevel) {

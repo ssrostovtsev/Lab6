@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MobilePhoneClassLib {
+namespace SimCorp.IMS.MobilePhoneClassLib {
     public class SMSProvider {
         public delegate void SMSRecievedHandler(string message);
         private delegate string FormatDelegate(string text);

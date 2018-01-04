@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MobilePhoneClassLib {
+namespace SimCorp.IMS.MobilePhoneClassLib {
     public class Message {
         public Message() { }
         public Message(string senderNo,string receiverNo,string text) {

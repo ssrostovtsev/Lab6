@@ -1,5 +1,6 @@
 ﻿using System;
-using MobilePhoneClassLib;
+using SimCorp.IMS.MobilePhone;
+using SimCorp.IMS.MobilePhoneClassLib;
 
 namespace MobilePhone {
     class Program {
@@ -7,7 +8,8 @@ namespace MobilePhone {
             OLEDScreen OLEDScreen = new OLEDScreen(768, 1024);
             LiPoBattery liPoBattery = new LiPoBattery(4100, 3.7, 83);
             MultiCoreCPU multiCoreCPU = new MultiCoreCPU("SnapDragon", 2.1, 2);
-            SimCorpMobile scmobile = new SimCorpMobile(OLEDScreen, liPoBattery, multiCoreCPU);
+            MessageStorage messageStorage = new MessageStorage("+380971994730");
+            SimCorpMobile scmobile = new SimCorpMobile(OLEDScreen, liPoBattery, multiCoreCPU,messageStorage);
             ConsoleOutput consoleOutput = new ConsoleOutput();
             Console.WriteLine("Select playback component (specify index):");
             Console.WriteLine($"1  - { nameof(iPhoneHeadset)}");

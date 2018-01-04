@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public class PhoneSpeaker : IPlayback {
         private IOutput Output;
         public PhoneSpeaker(IOutput output) {

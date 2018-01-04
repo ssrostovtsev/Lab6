@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MobilePhone {
+namespace SimCorp.IMS.MobilePhone {
     public class MonochromeScreen : ScreenBase {
         public MonochromeScreen(int width, int height) : base(width, height) { }
         public override void Show(IScreenImage screenImage) {

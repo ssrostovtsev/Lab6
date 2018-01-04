@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MobilePhoneClassLib {
+namespace SimCorp.IMS.MobilePhoneClassLib {
     public class MessageFilter {
         public List<Message> NumberStartsWith(List<Message> messages, string senderNumber) {
             //filtered by sender number

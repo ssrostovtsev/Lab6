@@ -1,4 +1,4 @@
-﻿namespace MobilePhone {
+﻿namespace SimCorp.IMS.MobilePhone {
     public abstract class ScreenBase {
         public ScreenBase(int width, int height) {
             this.Width = width;

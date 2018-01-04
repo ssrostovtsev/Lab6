@@ -1,4 +1,4 @@
-﻿using MobilePhone;
+﻿using SimCorp.IMS.MobilePhone;
 
 namespace MobilePhoneTests {
     public class FakeOutput : IOutput {

@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
-using MobilePhone;
-using MobilePhoneClassLib;
+using SimCorp.IMS.MobilePhone;
+using SimCorp.IMS.MobilePhoneClassLib;
 
 namespace SimCorp.IMS.MobilePhoneWithStorage {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class MobileWithStorageForm : Form {
+        public MobileWithStorageForm() {
             InitializeComponent();
             SimCorpMobile = InitSimCorpMobile();
             MsgStorage = SimCorpMobile.MessageStorage;
@@ -15,7 +14,7 @@ namespace SimCorp.IMS.MobilePhoneWithStorage {
             InitSMSNumberComboBox(MsgStorage);
         }
         private MessageStorage MsgStorage;
-        private MobilePhone.SimCorpMobile SimCorpMobile;
+        private SimCorpMobile SimCorpMobile;
         private void InitSMSNumberComboBox(MessageStorage messageStorage) {
             List<MobilePhoneClassLib.Message> messages = messageStorage.GetAllMessages();
             MessageFilter messageFilter = new MessageFilter();
@@ -28,14 +27,13 @@ namespace SimCorp.IMS.MobilePhoneWithStorage {
             OLEDScreen OLEDScreen = new OLEDScreen(768, 1024);
             LiPoBattery liPoBattery = new LiPoBattery(4100, 3.7, 83);
             MultiCoreCPU multiCoreCPU = new MultiCoreCPU("SnapDragon", 2.1, 2);
-            SimCorpMobile scmobile = new SimCorpMobile(OLEDScreen, liPoBattery, multiCoreCPU);
-            scmobile.MessageStorage = InitMessageStorage();
+            MessageStorage messageStorage = InitMessageStorage("+380971994730");
+            SimCorpMobile scmobile = new SimCorpMobile(OLEDScreen, liPoBattery, multiCoreCPU, messageStorage);
+            scmobile.MessageStorage = messageStorage;
             return scmobile;
         }
-        private MessageStorage InitMessageStorage() {
-            string phoneNo = "+380971994730";
+        private MessageStorage InitMessageStorage(string phoneNo) {
             MessageStorage messageStorage = new MessageStorage(phoneNo);
-
             for (int i = 0; i < 1000; i++) {
                 MobilePhoneClassLib.Message message = new MobilePhoneClassLib.Message($"+38{i}", phoneNo, $"Message #{i}");
                 messageStorage.AddMessage(message);
@@ -61,25 +59,25 @@ namespace SimCorp.IMS.MobilePhoneWithStorage {
                 ShowMessages(filteredMessages);
             }
         }
-        private static void ShowAddedMessage(object sender,MessageEventArgs e) {
-            MessageBox.Show("Text: "+e.Message.Text+" From: "+e.Message.SenderNumber);
+        private static void ShowAddedMessage(object sender, MessageEventArgs e) {
+            MessageBox.Show("Text: " + e.Message.Text + " From: " + e.Message.SenderNumber);
         }
         private static void ShowDeletedMessages(object sender, MessageEventArgs e) {
-            MessageBox.Show("Message from: "+ e.Message.SenderNumber+" has been deleted");
+            MessageBox.Show("Message from: " + e.Message.SenderNumber + " has been deleted");
         }
 
-        private void button1_Click(object sender, System.EventArgs e) {
-            MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000","+380971994730","Message for you!"));
-        }
+        //private void button1_Click(object sender, System.EventArgs e) {
+        //    MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Message for you!"));
+        //}
 
-        private void AddMessageTimer_Tick(object sender, System.EventArgs e) {
-            // MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Dummy message for you!"));
-            SMSGenerator sMSGenerator = new SMSGenerator();
-            sMSGenerator.GenerateMessage(MsgStorage);
-        }
+        //private void AddMessageTimer_Tick(object sender, System.EventArgs e) {
+        //    // MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Dummy message for you!"));
+        //    SMSGenerator sMSGenerator = new SMSGenerator();
+        //    sMSGenerator.GenerateMessage(MsgStorage);
+        //}
 
-        private void DeleteMessageTimer_Tick(object sender, System.EventArgs e) {
-            MsgStorage.DeleteMessage(new MobilePhoneClassLib.Message("+38000", "+00", "Messages from this number will be deleted!"));
-        }
+        //private void DeleteMessageTimer_Tick(object sender, System.EventArgs e) {
+        //    MsgStorage.DeleteMessage(new MobilePhoneClassLib.Message("+38000", "+00", "Messages from this number will be deleted!"));
+        //}
     }
 }

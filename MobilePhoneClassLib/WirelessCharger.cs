@@ -1,5 +1,5 @@
 ﻿using System;
-namespace MobilePhone {
+namespace SimCorp.IMS.MobilePhone {
     public class WirelessCharger : ICharger {
         private IOutput Output;
         public WirelessCharger(IOutput output) {
