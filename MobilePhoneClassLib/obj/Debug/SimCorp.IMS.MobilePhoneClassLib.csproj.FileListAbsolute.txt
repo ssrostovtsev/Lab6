@@ -1,5 +1,0 @@
-C:\Workspaces\MobilePhone4\MobilePhoneClassLib\bin\Debug\MobilePhoneClassLib.dll
-C:\Workspaces\MobilePhone4\MobilePhoneClassLib\bin\Debug\MobilePhoneClassLib.pdb
-C:\Workspaces\MobilePhone4\MobilePhoneClassLib\obj\Debug\SimCorp.IMS.MobilePhoneClassLib.csprojResolveAssemblyReference.cache
-C:\Workspaces\MobilePhone4\MobilePhoneClassLib\obj\Debug\MobilePhoneClassLib.dll
-C:\Workspaces\MobilePhone4\MobilePhoneClassLib\obj\Debug\MobilePhoneClassLib.pdb
