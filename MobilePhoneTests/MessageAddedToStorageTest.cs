@@ -2,9 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneClassLib;
 
-namespace MobilePhoneTests {
+namespace SimCorp.IMS.MobilePhoneTests {
     [TestClass]
-    public class MessageAddedToStorage {
+    public class MessageAddedToStorageTest {
         [TestMethod]
         public void MessageAddedTest() {
             //Arrange

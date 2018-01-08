@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhoneClassLib;
 
-namespace MobilePhoneTests {
+namespace SimCorp.IMS.MobilePhoneTests {
     [TestClass]
     public class MessageFilterNumberStartsWithTest {
         [TestMethod]

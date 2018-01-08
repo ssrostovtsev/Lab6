@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C57E06A6-2D31-4994-BC7D-5CF194BCC084}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{EDFFEF2E-BE4E-4DF8-A3F4-7EA07046F426}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MobilePhoneClassLib</RootNamespace>
-    <AssemblyName>MobilePhoneClassLib</AssemblyName>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,50 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BatteryBase.cs" />
-    <Compile Include="BatteryEventArgs.cs" />
-    <Compile Include="ChargerOld.cs" />
-    <Compile Include="ChargerByThread.cs" />
-    <Compile Include="DischargerTask.cs" />
-    <Compile Include="ChargerTask.cs" />
-    <Compile Include="DischargerThread.cs" />
-    <Compile Include="ColorfulScreen.cs" />
-    <Compile Include="CPUBase.cs" />
-    <Compile Include="ICharger.cs" />
-    <Compile Include="IOutput.cs" />
-    <Compile Include="iPhoneHeadset.cs" />
-    <Compile Include="IPlayback.cs" />
-    <Compile Include="IScreenImage.cs" />
-    <Compile Include="LiIonBattery.cs" />
-    <Compile Include="LiPoBattery.cs" />
-    <Compile Include="Message.cs" />
-    <Compile Include="MessageEventArgs.cs" />
-    <Compile Include="MessageFilter.cs" />
-    <Compile Include="MessageStorage.cs" />
-    <Compile Include="Mobile.cs" />
-    <Compile Include="MonochromeScreen.cs" />
-    <Compile Include="MultiCoreCPU.cs" />
-    <Compile Include="NoNameHeadset.cs" />
-    <Compile Include="OLEDScreen.cs" />
-    <Compile Include="OneCoreCPU.cs" />
-    <Compile Include="PhoneSpeaker.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RetinaScreen.cs" />
-    <Compile Include="SamsungHeadset.cs" />
-    <Compile Include="ScreenBase.cs" />
-    <Compile Include="ScreenContent.cs" />
-    <Compile Include="SimCorpMobileThreadTask.cs" />
-    <Compile Include="SimCorpMobile.cs" />
-    <Compile Include="SMSGenerator.cs" />
-    <Compile Include="SMSProvider.cs" />
-    <Compile Include="SMSProviderIntCreator.cs" />
-    <Compile Include="SMSProviderIntThread.cs" />
-    <Compile Include="SMSProviderIntThreadTask.cs" />
-    <Compile Include="SMSProviderIntTask.cs" />
-    <Compile Include="SMSProviderInt.cs" />
-    <Compile Include="WireCharger.cs" />
-    <Compile Include="WirelessCharger.cs" />
-    <Compile Include="ChargerThread.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

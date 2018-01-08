@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SimCorp.IMS.MobilePhone;
 
-namespace MobilePhoneTests {
+namespace SimCorp.IMS.MobilePhoneTests {
     [TestClass]
     public class OutputTest {
         [TestMethod]

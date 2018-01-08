@@ -65,19 +65,5 @@ namespace SimCorp.IMS.MobilePhoneWithStorage {
         private static void ShowDeletedMessages(object sender, MessageEventArgs e) {
             MessageBox.Show("Message from: " + e.Message.SenderNumber + " has been deleted");
         }
-
-        //private void button1_Click(object sender, System.EventArgs e) {
-        //    MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Message for you!"));
-        //}
-
-        //private void AddMessageTimer_Tick(object sender, System.EventArgs e) {
-        //    // MsgStorage.AddMessage(new MobilePhoneClassLib.Message("+38000", "+380971994730", "Dummy message for you!"));
-        //    SMSGenerator sMSGenerator = new SMSGenerator();
-        //    sMSGenerator.GenerateMessage(MsgStorage);
-        //}
-
-        //private void DeleteMessageTimer_Tick(object sender, System.EventArgs e) {
-        //    MsgStorage.DeleteMessage(new MobilePhoneClassLib.Message("+38000", "+00", "Messages from this number will be deleted!"));
-        //}
     }
 }

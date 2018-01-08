@@ -10,7 +10,6 @@ namespace SimCorp.IMS.MobilePhoneClassLib {
             Storage = messageStorage;
         }
         public delegate void SMSRecievedHandler(Message message);
-        public event SMSRecievedHandler SMSRecieved;
         private MessageStorage Storage;
         private static void SetAddSMSTimer(MessageStorage messageStorage) {
             System.Timers.Timer addSMSTimer = new System.Timers.Timer(10000);
@@ -41,10 +40,6 @@ namespace SimCorp.IMS.MobilePhoneClassLib {
         }
         private void DeleteMessageFromStorage(MessageStorage storage, Message msg) {
             storage.DeleteMessage(msg);
-        }
-        private void Do() {
-            Message msg = SendSMS();
-            AddMessageToStorage(Storage, msg);
         }
     }
 }

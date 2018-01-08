@@ -52,10 +52,16 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BatteryChargeLevelDecreasingByThreadTest.cs" />
+    <Compile Include="BatteryChargeLevelDecreasingByTaskTest.cs" />
+    <Compile Include="BatteryChargeLevelIncreasingByThreadTest.cs" />
+    <Compile Include="BatteryChargeLevelIncreasingByTaskTest.cs" />
+    <Compile Include="BatteryMinChargeLevelTest.cs" />
+    <Compile Include="BatteryMaxChargeLevelTest.cs" />
     <Compile Include="ChargerTest.cs" />
     <Compile Include="FakeOutput.cs" />
     <Compile Include="FakeShowSMS.cs" />
-    <Compile Include="MessageAddedToStorage.cs" />
+    <Compile Include="MessageAddedToStorageTest.cs" />
     <Compile Include="MessageFilterAndAllFiltersTest.cs" />
     <Compile Include="MessageFilterNumberStartsWithTest.cs" />
     <Compile Include="MessageFilterOrAllFiltersTest.cs" />

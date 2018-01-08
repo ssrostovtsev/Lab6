@@ -2,7 +2,7 @@
 using SimCorp.IMS.MobilePhoneClassLib;
 using static SimCorp.IMS.MobilePhoneClassLib.SMSProvider;
 
-namespace MobilePhoneTests {
+namespace SimCorp.IMS.MobilePhoneTests {
     [TestClass]
     public class SMSEventTest {
         private string Result;

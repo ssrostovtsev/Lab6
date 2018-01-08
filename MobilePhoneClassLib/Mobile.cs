@@ -11,7 +11,10 @@ namespace SimCorp.IMS.MobilePhoneClassLib {
         public abstract CPUBase CPU { get; set; }
         public SMSProvider SMSProvider { get; set; }
         internal abstract SMSProviderInt SMSProviderInt { get; set; }
+        internal abstract SMSProviderIntThreadTask SMSProviderIntThreadTask { get; set; }
         public MessageStorage MessageStorage { get; set; }
+        public abstract void StartGenerateSMS();
+        public abstract void StopGenerateSMS();
         private void Show(IScreenImage screenImage) {
             Screen.Show(screenImage);
         }

@@ -1,6 +1,6 @@
 ﻿using SimCorp.IMS.MobilePhone;
 
-namespace MobilePhoneTests {
+namespace SimCorp.IMS.MobilePhoneTests {
     public class FakeOutput : IOutput {
         public string WriteResult { get; set; }
         public string WriteLineResult { get; set; }
