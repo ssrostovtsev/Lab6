@@ -23,7 +23,7 @@ namespace SimCorp.IMS.MobilePhoneClassLib {
                 lock (thisLock) {
                     Message msg = SendSMS();
                     Storage.AddMessage(msg);
-                    Thread.Sleep(10000);
+                    Thread.Sleep(1000);
                 };
 
             }

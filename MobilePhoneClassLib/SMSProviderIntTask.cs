@@ -20,7 +20,7 @@ namespace SimCorp.IMS.MobilePhoneClassLib {
                 // Do the work..
                 Message msg = SendSMS();
                 Storage.AddMessage(msg);
-                Thread.Sleep(10000);
+                Thread.Sleep(1000);
             }
         }
         public override void Start() {

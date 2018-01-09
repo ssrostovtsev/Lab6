@@ -43,8 +43,6 @@
   <ItemGroup>
     <Compile Include="BatteryBase.cs" />
     <Compile Include="BatteryEventArgs.cs" />
-    <Compile Include="ChargerOld.cs" />
-    <Compile Include="ChargerByThread.cs" />
     <Compile Include="DischargerTask.cs" />
     <Compile Include="ChargerTask.cs" />
     <Compile Include="DischargerThread.cs" />
