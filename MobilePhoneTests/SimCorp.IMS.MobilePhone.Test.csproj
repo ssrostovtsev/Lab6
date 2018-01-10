@@ -58,6 +58,7 @@
     <Compile Include="BatteryChargeLevelIncreasingByTaskTest.cs" />
     <Compile Include="BatteryMinChargeLevelTest.cs" />
     <Compile Include="BatteryMaxChargeLevelTest.cs" />
+    <Compile Include="CallEqualityTest.cs" />
     <Compile Include="ChargerTest.cs" />
     <Compile Include="FakeOutput.cs" />
     <Compile Include="FakeShowSMS.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="SMSLowercaseFormatTest.cs" />
     <Compile Include="SMSNoneFormatTest.cs" />
     <Compile Include="SMSUppercaseFormatTest.cs" />
+    <Compile Include="CallSortingTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MobileFormWinForm\SimCorp.IMS.MobileFormWinForm.csproj">

@@ -43,6 +43,10 @@
   <ItemGroup>
     <Compile Include="BatteryBase.cs" />
     <Compile Include="BatteryEventArgs.cs" />
+    <Compile Include="Call.cs" />
+    <Compile Include="CallsStorage.cs" />
+    <Compile Include="CallsTask.cs" />
+    <Compile Include="Contact.cs" />
     <Compile Include="DischargerTask.cs" />
     <Compile Include="ChargerTask.cs" />
     <Compile Include="DischargerThread.cs" />
@@ -56,6 +60,7 @@
     <Compile Include="LiIonBattery.cs" />
     <Compile Include="LiPoBattery.cs" />
     <Compile Include="Message.cs" />
+    <Compile Include="CallEventArgs.cs" />
     <Compile Include="MessageEventArgs.cs" />
     <Compile Include="MessageFilter.cs" />
     <Compile Include="MessageStorage.cs" />
